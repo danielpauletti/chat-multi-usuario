@@ -98,7 +98,7 @@ public class ClienteConectado implements Runnable {
             enviaMensagemPublica("Saiu");
             ChatServer.usuariosConectados.remove(this);
             enviaListaUsuarios();
-            s.close();
+            th.join();
         }catch(Exception ex){
             ex.printStackTrace();
         }

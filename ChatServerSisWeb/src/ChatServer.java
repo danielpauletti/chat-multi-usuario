@@ -14,7 +14,6 @@ public class ChatServer {
     ServerSocket ss;
     Socket s;
     static List<ClienteConectado> usuariosConectados;
-    Timer timer;
 
     public ChatServer() {
         try {
